@@ -1,0 +1,13 @@
+package com.zaid.consent.controller;
+
+
+
+@RestController
+public class MyController {
+	
+	
+	@GetMapping
+	public String hello() {}
+	return "ABDM CONSENT MANAGEMENT";
+
+}
