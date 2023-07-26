@@ -1,6 +1,6 @@
 package com.abdm.consent.controller;
 
-import com.abdm.consent.models.consent;
+import com.abdm.consent.models.Consent;
 import com.abdm.consent.repo.ConsentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/consent")
 public class mycontroller {
 	
-//	@GetMapping
-//	public String Hello() {
-//		return "consent management";
-//	}
 
 
 	@Autowired
@@ -23,13 +19,13 @@ public class mycontroller {
 
 
 	@PostMapping("/")
-	public ResponseEntity<?> addConsent(@RequestBody consent cons){
-		consent save=this.consentrepo.save(cons);
+	public ResponseEntity<?> addConsent(@RequestBody Consent cons){
+		Consent save=this.consentrepo.save(cons);
 		return ResponseEntity.ok(save);
 	}
 
 	@GetMapping("/")
-	public ResponseEntity<?> getStudent(){
+	public ResponseEntity<?> getConsent(){
 		return ResponseEntity.ok(this.consentrepo.findAll());
 	}
 

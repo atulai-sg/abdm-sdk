@@ -4,7 +4,7 @@ package com.abdm.consent.models;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="consents")
-public class consent {
+public class Consent {
 
 
 
@@ -12,7 +12,7 @@ public class consent {
     private String timestamp;
     private String consent;
 
-    public consent(String requestId, String timestamp, String consent) {
+    public Consent(String requestId, String timestamp, String consent) {
         this.requestId = requestId;
         this.timestamp = timestamp;
         this.consent = consent;
