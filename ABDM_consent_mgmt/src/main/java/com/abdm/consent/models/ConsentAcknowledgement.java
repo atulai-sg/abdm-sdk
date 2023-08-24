@@ -5,11 +5,11 @@ import java.util.Objects;
 
 public class ConsentAcknowledgement {
 
-    @JsonAdapter(StatusEnum.Adapter.class)
+//    @JsonAdapter(StatusEnum.Adapter.class)
     public enum StatusEnum {
-        @SerializedName("OK")
+//        @SerializedName("OK")
         OK("OK"),
-        @SerializedName("UNKNOWN")
+//        @SerializedName("UNKNOWN")
         UNKNOWN("UNKNOWN");
 
         private String value;
@@ -33,22 +33,23 @@ public class ConsentAcknowledgement {
             }
             return null;
         }
-        public static class Adapter extends TypeAdapter<StatusEnum> {
-            @Override
-            public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
-                jsonWriter.value(String.valueOf(enumeration.getValue()));
-            }
-
-            @Override
-            public StatusEnum read(final JsonReader jsonReader) throws IOException {
-                Object value = jsonReader.nextString();
-                return StatusEnum.fromValue((String)(value));
-            }
-        }
-    }  @SerializedName("status")
+//        public static class Adapter extends TypeAdapter<StatusEnum> {
+//            @Override
+//            public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+//                jsonWriter.value(String.valueOf(enumeration.getValue()));
+//            }
+//
+//            @Override
+//            public StatusEnum read(final JsonReader jsonReader) throws IOException {
+//                Object value = jsonReader.nextString();
+//                return StatusEnum.fromValue((String)(value));
+//            }
+//        }
+    }
+//    @SerializedName("status")
     private StatusEnum status = null;
 
-    @SerializedName("consentId")
+//    @SerializedName("consentId")
     private String consentId = null;
 
     public ConsentAcknowledgement status(StatusEnum status) {
@@ -60,7 +61,7 @@ public class ConsentAcknowledgement {
      * Get status
      * @return status
      **/
-    @Schema(required = true, description = "")
+//    @Schema(required = true, description = "")
     public StatusEnum getStatus() {
         return status;
     }
@@ -78,7 +79,7 @@ public class ConsentAcknowledgement {
      * Get consentId
      * @return consentId
      **/
-    @Schema(example = "<consent-artefact-id>", required = true, description = "")
+//    @Schema(example = "<consent-artefact-id>", required = true, description = "")
     public String getConsentId() {
         return consentId;
     }
@@ -128,6 +129,5 @@ public class ConsentAcknowledgement {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
 
 }

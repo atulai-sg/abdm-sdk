@@ -1,23 +1,22 @@
 package com.abdm.consent.models;
 
 
-import java.io.IOException;
+import java.time.OffsetDateTime;
 import java.util.Objects;
-import com.google.gson.annotations.JsonAdapter;
 
 public class Permission {
     /**
      * Gets or Sets accessMode
      */
-    @JsonAdapter(AccessModeEnum.Adapter.class)
+//    @JsonAdapter(AccessModeEnum.Adapter.class)
     public enum AccessModeEnum {
-        @SerializedName("VIEW")
+//        @SerializedName("VIEW")
         VIEW("VIEW"),
-        @SerializedName("STORE")
+//        @SerializedName("STORE")
         STORE("STORE"),
-        @SerializedName("QUERY")
+//        @SerializedName("QUERY")
         QUERY("QUERY"),
-        @SerializedName("STREAM")
+//        @SerializedName("STREAM")
         STREAM("STREAM");
 
         private String value;
@@ -41,28 +40,29 @@ public class Permission {
             }
             return null;
         }
-        public static class Adapter extends TypeAdapter<AccessModeEnum> {
-            @Override
-            public void write(final JsonWriter jsonWriter, final AccessModeEnum enumeration) throws IOException {
-                jsonWriter.value(String.valueOf(enumeration.getValue()));
-            }
-
-            @Override
-            public AccessModeEnum read(final JsonReader jsonReader) throws IOException {
-                Object value = jsonReader.nextString();
-                return AccessModeEnum.fromValue((String)(value));
-            }
-        }
-    }  @SerializedName("accessMode")
+//        public static class Adapter extends TypeAdapter<AccessModeEnum> {
+//            @Override
+//            public void write(final JsonWriter jsonWriter, final AccessModeEnum enumeration) throws IOException {
+//                jsonWriter.value(String.valueOf(enumeration.getValue()));
+//            }
+//
+//            @Override
+//            public AccessModeEnum read(final JsonReader jsonReader) throws IOException {
+//                Object value = jsonReader.nextString();
+//                return AccessModeEnum.fromValue((String)(value));
+//            }
+//        }
+    }
+//    @SerializedName("accessMode")
     private AccessModeEnum accessMode = null;
 
-    @SerializedName("dateRange")
+//    @SerializedName("dateRange")
     private PermissionDateRange dateRange = null;
 
-    @SerializedName("dataEraseAt")
+//    @SerializedName("dataEraseAt")
     private OffsetDateTime dataEraseAt = null;
 
-    @SerializedName("frequency")
+//    @SerializedName("frequency")
     private PermissionFrequency frequency = null;
 
     public Permission accessMode(AccessModeEnum accessMode) {
@@ -74,7 +74,7 @@ public class Permission {
      * Get accessMode
      * @return accessMode
      **/
-    @Schema(required = true, description = "")
+//    @Schema(required = true, description = "")
     public AccessModeEnum getAccessMode() {
         return accessMode;
     }
@@ -92,7 +92,7 @@ public class Permission {
      * Get dateRange
      * @return dateRange
      **/
-    @Schema(required = true, description = "")
+//    @Schema(required = true, description = "")
     public PermissionDateRange getDateRange() {
         return dateRange;
     }
@@ -110,7 +110,7 @@ public class Permission {
      * Get dataEraseAt
      * @return dataEraseAt
      **/
-    @Schema(required = true, description = "")
+//    @Schema(required = true, description = "")
     public OffsetDateTime getDataEraseAt() {
         return dataEraseAt;
     }
@@ -128,7 +128,7 @@ public class Permission {
      * Get frequency
      * @return frequency
      **/
-    @Schema(required = true, description = "")
+//    @Schema(required = true, description = "")
     public PermissionFrequency getFrequency() {
         return frequency;
     }
@@ -184,3 +184,6 @@ public class Permission {
     }
 
 }
+
+
+

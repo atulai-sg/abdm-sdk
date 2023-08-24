@@ -4,8 +4,12 @@ import java.io.IOException;
 import java.util.Objects;
 
 
+
 public class Error {
-    @JsonAdapter(CodeEnum.Adapter.class)
+    /**
+     * Gets or Sets code
+     */
+//    @JsonAdapter(CodeEnum.Adapter.class)
     public enum CodeEnum {
 //        @SerializedName("1000")
         NUMBER_1000(1000),
@@ -33,19 +37,20 @@ public class Error {
             }
             return null;
         }
-        public static class Adapter extends TypeAdapter<CodeEnum> {
-            @Override
-            public void write(final JsonWriter jsonWriter, final CodeEnum enumeration) throws IOException {
-                jsonWriter.value(String.valueOf(enumeration.getValue()));
-            }
-
-            @Override
-            public CodeEnum read(final JsonReader jsonReader) throws IOException {
-                Object value = jsonReader.nextInt();
-                return CodeEnum.fromValue((Integer)(value));
-            }
-        }
-//    }  @SerializedName("code")
+//        public static class Adapter extends TypeAdapter<CodeEnum> {
+//            @Override
+//            public void write(final JsonWriter jsonWriter, final CodeEnum enumeration) throws IOException {
+//                jsonWriter.value(String.valueOf(enumeration.getValue()));
+//            }
+//
+//            @Override
+//            public CodeEnum read(final JsonReader jsonReader) throws IOException {
+//                Object value = jsonReader.nextInt();
+//                return CodeEnum.fromValue((Integer)(value));
+//            }
+//        }
+    }
+//    @SerializedName("code")
     private CodeEnum code = null;
 
 //    @SerializedName("message")
@@ -130,3 +135,4 @@ public class Error {
     }
 
 }
+
