@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.abdm.data_transfer_workflow.HIRequestTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-08-25T20:40:31" hostname="DESKTOP-SOV4CPF" time="0.069">
+  <properties/>
+  <testcase name="testHandleHiRequest()" classname="com.abdm.data_transfer_workflow.HIRequestTest" time="0.069">
+    <failure message="org.springframework.http.InvalidMediaTypeException: Invalid mime type &quot;{&quot;requestId&quot;:&quot;test-guid&quot;,&quot;timestamp&quot;:&quot;2023-08-25T12:00:00Z&quot;,&quot;hiRequest&quot;:{&quot;consent&quot;:{&quot;id&quot;:&quot;1810102b-0bd2-4901-a718-46705721fcf1&quot;},&quot;dateRange&quot;:{&quot;from&quot;:&quot;2020-11-25T12:30:29.592&quot;,&quot;to&quot;:&quot;2025-05-09T11:10:10.592&quot;},&quot;dataPushUrl&quot;:&quot;https://webhook.site/ae79e55d-8107-4598-873c-1f6c4ba05915&quot;,&quot;keyMaterial&quot;:{&quot;cryptoAlg&quot;:&quot;ECDH&quot;,&quot;curve&quot;:&quot;Curve25519&quot;,&quot;dhPublicKey&quot;:{&quot;expiry&quot;:&quot;2029-12-20T12:30:29.592&quot;,&quot;parameters&quot;:&quot;BHQcPbls+7XzTwE2Wl5IBvXhtncqRqWfK1JcVTr3t+rISUupj2S+et29NRHxm1ExE0NaaS4UdRJwcYrMWPzAbcI=&quot;,&quot;keyValue&quot;:&quot;MIIBMTCB6gYHKoZIzj0CATCB3gIBATArBgcqhkjOPQEBAiB/////////////////////////////////////////7TBEBCAqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqYSRShRAQge0Je0Je0Je0Je0Je0Je0Je0Je0Je0Je0JgtenHcQyGQEQQQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq0kWiCuGaG4oIa04B7dLHdI0UySPU1+bXxhsinpxaJ+ztPZAiAQAAAAAAAAAAAAAAAAAAAAFN753qL3nNZYEmMaXPXT7QIBCANCAAQqCCIzBXvtTZBvovCenuoWTsfk+FHn83GeeKWOsn9JcG3C/SHIk43re1lFo+LF0xP+9bqa/CP/jn4KNVp0cwCb&quot;},&quot;nonce&quot;:&quot;MEhO+VuIXZs+2LdbcqHabGYMZe7x3H3isZQOtE4ala0=&quot;}}}}&quot;: Invalid token character '{' in token &quot;{&quot;requestId&quot;:&quot;test-guid&quot;,&quot;timestamp&quot;:&quot;2023-08-25T12:00:00Z&quot;,&quot;hiRequest&quot;:{&quot;consent&quot;:{&quot;id&quot;:&quot;1810102b-0bd2-4901-a718-46705721fcf1&quot;},&quot;dateRange&quot;:{&quot;from&quot;:&quot;2020-11-25T12:30:29.592&quot;,&quot;to&quot;:&quot;2025-05-09T11:10:10.592&quot;},&quot;dataPushUrl&quot;:&quot;https:&quot;" type="org.springframework.http.InvalidMediaTypeException">org.springframework.http.InvalidMediaTypeException: Invalid mime type &quot;{&quot;requestId&quot;:&quot;test-guid&quot;,&quot;timestamp&quot;:&quot;2023-08-25T12:00:00Z&quot;,&quot;hiRequest&quot;:{&quot;consent&quot;:{&quot;id&quot;:&quot;1810102b-0bd2-4901-a718-46705721fcf1&quot;},&quot;dateRange&quot;:{&quot;from&quot;:&quot;2020-11-25T12:30:29.592&quot;,&quot;to&quot;:&quot;2025-05-09T11:10:10.592&quot;},&quot;dataPushUrl&quot;:&quot;https://webhook.site/ae79e55d-8107-4598-873c-1f6c4ba05915&quot;,&quot;keyMaterial&quot;:{&quot;cryptoAlg&quot;:&quot;ECDH&quot;,&quot;curve&quot;:&quot;Curve25519&quot;,&quot;dhPublicKey&quot;:{&quot;expiry&quot;:&quot;2029-12-20T12:30:29.592&quot;,&quot;parameters&quot;:&quot;BHQcPbls+7XzTwE2Wl5IBvXhtncqRqWfK1JcVTr3t+rISUupj2S+et29NRHxm1ExE0NaaS4UdRJwcYrMWPzAbcI=&quot;,&quot;keyValue&quot;:&quot;MIIBMTCB6gYHKoZIzj0CATCB3gIBATArBgcqhkjOPQEBAiB/////////////////////////////////////////7TBEBCAqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqYSRShRAQge0Je0Je0Je0Je0Je0Je0Je0Je0Je0Je0JgtenHcQyGQEQQQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq0kWiCuGaG4oIa04B7dLHdI0UySPU1+bXxhsinpxaJ+ztPZAiAQAAAAAAAAAAAAAAAAAAAAFN753qL3nNZYEmMaXPXT7QIBCANCAAQqCCIzBXvtTZBvovCenuoWTsfk+FHn83GeeKWOsn9JcG3C/SHIk43re1lFo+LF0xP+9bqa/CP/jn4KNVp0cwCb&quot;},&quot;nonce&quot;:&quot;MEhO+VuIXZs+2LdbcqHabGYMZe7x3H3isZQOtE4ala0=&quot;}}}}&quot;: Invalid token character '{' in token &quot;{&quot;requestId&quot;:&quot;test-guid&quot;,&quot;timestamp&quot;:&quot;2023-08-25T12:00:00Z&quot;,&quot;hiRequest&quot;:{&quot;consent&quot;:{&quot;id&quot;:&quot;1810102b-0bd2-4901-a718-46705721fcf1&quot;},&quot;dateRange&quot;:{&quot;from&quot;:&quot;2020-11-25T12:30:29.592&quot;,&quot;to&quot;:&quot;2025-05-09T11:10:10.592&quot;},&quot;dataPushUrl&quot;:&quot;https:&quot;
+	at app//org.springframework.http.MediaType.parseMediaType(MediaType.java:742)
+	at app//org.springframework.http.MediaType.valueOf(MediaType.java:727)
+	at app//com.abdm.data_transfer_workflow.HIRequestTest.testHandleHiRequest(HIRequestTest.java:42)
+	at java.base@19.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@19.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@19.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@19.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@19.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.springframework.util.InvalidMimeTypeException: Invalid mime type &quot;{&quot;requestId&quot;:&quot;test-guid&quot;,&quot;timestamp&quot;:&quot;2023-08-25T12:00:00Z&quot;,&quot;hiRequest&quot;:{&quot;consent&quot;:{&quot;id&quot;:&quot;1810102b-0bd2-4901-a718-46705721fcf1&quot;},&quot;dateRange&quot;:{&quot;from&quot;:&quot;2020-11-25T12:30:29.592&quot;,&quot;to&quot;:&quot;2025-05-09T11:10:10.592&quot;},&quot;dataPushUrl&quot;:&quot;https://webhook.site/ae79e55d-8107-4598-873c-1f6c4ba05915&quot;,&quot;keyMaterial&quot;:{&quot;cryptoAlg&quot;:&quot;ECDH&quot;,&quot;curve&quot;:&quot;Curve25519&quot;,&quot;dhPublicKey&quot;:{&quot;expiry&quot;:&quot;2029-12-20T12:30:29.592&quot;,&quot;parameters&quot;:&quot;BHQcPbls+7XzTwE2Wl5IBvXhtncqRqWfK1JcVTr3t+rISUupj2S+et29NRHxm1ExE0NaaS4UdRJwcYrMWPzAbcI=&quot;,&quot;keyValue&quot;:&quot;MIIBMTCB6gYHKoZIzj0CATCB3gIBATArBgcqhkjOPQEBAiB/////////////////////////////////////////7TBEBCAqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqYSRShRAQge0Je0Je0Je0Je0Je0Je0Je0Je0Je0Je0JgtenHcQyGQEQQQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq0kWiCuGaG4oIa04B7dLHdI0UySPU1+bXxhsinpxaJ+ztPZAiAQAAAAAAAAAAAAAAAAAAAAFN753qL3nNZYEmMaXPXT7QIBCANCAAQqCCIzBXvtTZBvovCenuoWTsfk+FHn83GeeKWOsn9JcG3C/SHIk43re1lFo+LF0xP+9bqa/CP/jn4KNVp0cwCb&quot;},&quot;nonce&quot;:&quot;MEhO+VuIXZs+2LdbcqHabGYMZe7x3H3isZQOtE4ala0=&quot;}}}}&quot;: Invalid token character '{' in token &quot;{&quot;requestId&quot;:&quot;test-guid&quot;,&quot;timestamp&quot;:&quot;2023-08-25T12:00:00Z&quot;,&quot;hiRequest&quot;:{&quot;consent&quot;:{&quot;id&quot;:&quot;1810102b-0bd2-4901-a718-46705721fcf1&quot;},&quot;dateRange&quot;:{&quot;from&quot;:&quot;2020-11-25T12:30:29.592&quot;,&quot;to&quot;:&quot;2025-05-09T11:10:10.592&quot;},&quot;dataPushUrl&quot;:&quot;https:&quot;
+	at app//org.springframework.util.MimeTypeUtils.parseMimeTypeInternal(MimeTypeUtils.java:279)
+	at app//org.springframework.util.ConcurrentLruCache.get(ConcurrentLruCache.java:100)
+	at app//org.springframework.util.MimeTypeUtils.parseMimeType(MimeTypeUtils.java:213)
+	at app//org.springframework.http.MediaType.parseMediaType(MediaType.java:739)
+	... 82 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[02:10:26.966 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.abdm.data_transfer_workflow.HIRequestTest]: HIRequestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:10:27.166 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.abdm.data_transfer_workflow.DataTransferWorkflowApplication for test class com.abdm.data_transfer_workflow.HIRequestTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.3)
+
+2023-08-26T02:10:29.426+05:30  INFO 11396 --- [    Test worker] c.a.d.HIRequestTest                      : Starting HIRequestTest using Java 19.0.1 with PID 11396 (started by User in C:\Spring projects\data_transfer_workflow)
+2023-08-26T02:10:29.429+05:30  INFO 11396 --- [    Test worker] c.a.d.HIRequestTest                      : No active profile set, falling back to 1 default profile: "default"
+2023-08-26T02:10:31.047+05:30  INFO 11396 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-26T02:10:31.047+05:30  INFO 11396 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-26T02:10:31.051+05:30  INFO 11396 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2023-08-26T02:10:31.102+05:30  INFO 11396 --- [    Test worker] c.a.d.HIRequestTest                      : Started HIRequestTest in 2.364 seconds (process running for 5.689)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
