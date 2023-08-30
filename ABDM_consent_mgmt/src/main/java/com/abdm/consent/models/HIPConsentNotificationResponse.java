@@ -10,7 +10,7 @@ public class HIPConsentNotificationResponse {
     private UUID requestId = null;
 
 //    @SerializedName("timestamp")
-    private OffsetDateTime timestamp = null;
+    private String timestamp = null;
 
 //    @SerializedName("acknowledgement")
     private ConsentAcknowledgement acknowledgement = null;
@@ -39,7 +39,7 @@ public class HIPConsentNotificationResponse {
         this.requestId = requestId;
     }
 
-    public HIPConsentNotificationResponse timestamp(OffsetDateTime timestamp) {
+    public HIPConsentNotificationResponse timestamp(String timestamp) {
         this.timestamp = timestamp;
         return this;
     }
@@ -49,11 +49,11 @@ public class HIPConsentNotificationResponse {
      * @return timestamp
      **/
 //    @Schema(required = true, description = "")
-    public OffsetDateTime getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(OffsetDateTime timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 

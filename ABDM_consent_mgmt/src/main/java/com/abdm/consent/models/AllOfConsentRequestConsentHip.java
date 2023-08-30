@@ -16,10 +16,10 @@ public class AllOfConsentRequestConsentHip extends OrganizationRepresentation {
         return super.equals(o);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode());
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(super.hashCode());
+//    }
 
 
     @Override

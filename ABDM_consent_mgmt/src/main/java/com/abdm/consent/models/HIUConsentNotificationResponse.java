@@ -12,7 +12,7 @@ public class HIUConsentNotificationResponse {
     private UUID requestId = null;
 
 //    @SerializedName("timestamp")
-    private OffsetDateTime timestamp = null;
+    private String timestamp = null;
 
 //    @SerializedName("acknowledgement")
     private List<ConsentAcknowledgement> acknowledgement = null;
@@ -41,7 +41,7 @@ public class HIUConsentNotificationResponse {
         this.requestId = requestId;
     }
 
-    public HIUConsentNotificationResponse timestamp(OffsetDateTime timestamp) {
+    public HIUConsentNotificationResponse timestamp(String timestamp) {
         this.timestamp = timestamp;
         return this;
     }
@@ -51,11 +51,11 @@ public class HIUConsentNotificationResponse {
      * @return timestamp
      **/
 //    @Schema(required = true, description = "")
-    public OffsetDateTime getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(OffsetDateTime timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 

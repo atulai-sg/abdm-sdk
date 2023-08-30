@@ -9,7 +9,7 @@ public class ConsentFetchRequest {
     private UUID requestId = null;
 
 //    @SerializedName("timestamp")
-    private OffsetDateTime timestamp = null;
+    private String timestamp = null;
 
 //    @SerializedName("consentId")
     private String consentId = null;
@@ -32,7 +32,7 @@ public class ConsentFetchRequest {
         this.requestId = requestId;
     }
 
-    public ConsentFetchRequest timestamp(OffsetDateTime timestamp) {
+    public ConsentFetchRequest timestamp(String timestamp) {
         this.timestamp = timestamp;
         return this;
     }
@@ -42,11 +42,11 @@ public class ConsentFetchRequest {
      * @return timestamp
      **/
 //    @Schema(required = true, description = "")
-    public OffsetDateTime getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(OffsetDateTime timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 

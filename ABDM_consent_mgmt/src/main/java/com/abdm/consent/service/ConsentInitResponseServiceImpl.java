@@ -1,9 +1,13 @@
 package com.abdm.consent.service;
 
 import com.abdm.consent.models.ConsentRequestInitResponse;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
+
+
+@Service
 
 public class ConsentInitResponseServiceImpl implements  ConsentInitResponseService{
 
@@ -20,7 +24,7 @@ public class ConsentInitResponseServiceImpl implements  ConsentInitResponseServi
     public ConsentRequestInitResponse getConsentResponse(String id) {
 
         for(ConsentRequestInitResponse c:all){
-            if(c.getRequestId()== UUID.fromString(id)){
+            if(c.getRequestId()== (id)){
 
                 return c;
 
@@ -33,7 +37,10 @@ public class ConsentInitResponseServiceImpl implements  ConsentInitResponseServi
 
     @Override
     public ConsentRequestInitResponse addConsentResponse(ConsentRequestInitResponse c) {
+
+
         all.add(c);
+        System.out.println(c.getRequestId());
         return c;
     }
 

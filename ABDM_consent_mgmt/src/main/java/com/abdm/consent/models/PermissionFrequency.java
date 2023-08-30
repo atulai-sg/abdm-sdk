@@ -22,6 +22,7 @@ public class PermissionFrequency {
 
         private String value;
 
+
         UnitEnum(String value) {
             this.value = value;
         }

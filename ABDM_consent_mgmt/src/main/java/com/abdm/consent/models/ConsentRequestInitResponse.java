@@ -6,10 +6,10 @@ import java.util.UUID;
 
 public class ConsentRequestInitResponse {
 //    @SerializedName("requestId")
-    private UUID requestId = null;
+    private String requestId = null;
 
 //    @SerializedName("timestamp")
-    private OffsetDateTime timestamp = null;
+    private String timestamp = null;
 
 //    @SerializedName("consentRequest")
     private ConsentRequestInitResponseConsentRequest consentRequest = null;
@@ -20,7 +20,7 @@ public class ConsentRequestInitResponse {
 //    @SerializedName("resp")
     private RequestReference resp = null;
 
-    public ConsentRequestInitResponse requestId(UUID requestId) {
+    public ConsentRequestInitResponse requestId(String requestId) {
         this.requestId = requestId;
         return this;
     }
@@ -30,15 +30,15 @@ public class ConsentRequestInitResponse {
      * @return requestId
      **/
 //    @Schema(example = "5f7a535d-a3fd-416b-b069-c97d021fbacd", required = true, description = "a nonce, unique for each HTTP request")
-    public UUID getRequestId() {
+    public String getRequestId() {
         return requestId;
     }
 
-    public void setRequestId(UUID requestId) {
+    public void setRequestId(String requestId) {
         this.requestId = requestId;
     }
 
-    public ConsentRequestInitResponse timestamp(OffsetDateTime timestamp) {
+    public ConsentRequestInitResponse timestamp(String timestamp) {
         this.timestamp = timestamp;
         return this;
     }
@@ -48,11 +48,11 @@ public class ConsentRequestInitResponse {
      * @return timestamp
      **/
 //    @Schema(required = true, description = "")
-    public OffsetDateTime getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(OffsetDateTime timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 

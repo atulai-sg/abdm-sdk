@@ -1,42 +1,54 @@
 package com.abdm.consent.models;
 
+
+import com.google.gson.TypeAdapter;
+import com.google.gson.annotations.JsonAdapter;
+import com.google.gson.annotations.SerializedName;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+
 import java.io.IOException;
 import java.util.Objects;
 
 
 
 public class Error {
+    private int code ;
+
+    //    @SerializedName("message")
+    private String message = null;
+
     /**
      * Gets or Sets code
      */
 //    @JsonAdapter(CodeEnum.Adapter.class)
-    public enum CodeEnum {
+//    public enum CodeEnum {
 //        @SerializedName("1000")
-        NUMBER_1000(1000),
+//        NUMBER_1000(1000),
 //        @SerializedName("10001")
-        NUMBER_10001(10001);
-
-        private Integer value;
-
-        CodeEnum(Integer value) {
-            this.value = value;
-        }
-        public Integer getValue() {
-            return value;
-        }
-
-        @Override
-        public String toString() {
-            return String.valueOf(value);
-        }
-        public static CodeEnum fromValue(Integer input) {
-            for (CodeEnum b : CodeEnum.values()) {
-                if (b.value.equals(input)) {
-                    return b;
-                }
-            }
-            return null;
-        }
+//        NUMBER_10001(10001);
+//
+//        private Integer value;
+//
+//        CodeEnum(Integer value) {
+//            this.value = value;
+//        }
+//        public Integer getValue() {
+//            return value;
+//        }
+//
+//        @Override
+//        public String toString() {
+//            return String.valueOf(value);
+//        }
+//        public static CodeEnum fromValue(Integer input) {
+//            for (CodeEnum b : CodeEnum.values()) {
+//                if (b.value.equals(input)) {
+//                    return b;
+//                }
+//            }
+//            return null;
+//        }
 //        public static class Adapter extends TypeAdapter<CodeEnum> {
 //            @Override
 //            public void write(final JsonWriter jsonWriter, final CodeEnum enumeration) throws IOException {
@@ -49,14 +61,10 @@ public class Error {
 //                return CodeEnum.fromValue((Integer)(value));
 //            }
 //        }
-    }
+//    }
 //    @SerializedName("code")
-    private CodeEnum code = null;
 
-//    @SerializedName("message")
-    private String message = null;
-
-    public Error code(CodeEnum code) {
+    public Error code(int code) {
         this.code = code;
         return this;
     }
@@ -66,11 +74,11 @@ public class Error {
      * @return code
      **/
 //    @Schema(required = true, description = "")
-    public CodeEnum getCode() {
+    public int getCode() {
         return code;
     }
 
-    public void setCode(CodeEnum code) {
+    public void setCode(int code) {
         this.code = code;
     }
 
@@ -135,4 +143,3 @@ public class Error {
     }
 
 }
-

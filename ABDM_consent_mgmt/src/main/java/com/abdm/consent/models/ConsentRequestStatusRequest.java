@@ -11,7 +11,7 @@ public class ConsentRequestStatusRequest {
     private UUID requestId = null;
 
 //    @SerializedName("timestamp")
-    private OffsetDateTime timestamp = null;
+    private String timestamp = null;
 
 //    @SerializedName("consentRequestId")
     private String consentRequestId = null;
@@ -34,7 +34,7 @@ public class ConsentRequestStatusRequest {
         this.requestId = requestId;
     }
 
-    public ConsentRequestStatusRequest timestamp(OffsetDateTime timestamp) {
+    public ConsentRequestStatusRequest timestamp(String timestamp) {
         this.timestamp = timestamp;
         return this;
     }
@@ -44,11 +44,11 @@ public class ConsentRequestStatusRequest {
      * @return timestamp
      **/
 //    @Schema(required = true, description = "")
-    public OffsetDateTime getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(OffsetDateTime timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 

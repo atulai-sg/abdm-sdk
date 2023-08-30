@@ -18,11 +18,15 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-
+    implementation 'com.netflix.hollow:hollow-jsonadapter:7.2.6'
+	implementation 'com.netflix.hollow:hollow-jsonadapter:7.2.6'
+	implementation 'com.google.code.gson:gson:2.8.1'
+	implementation 'org.threeten:threetenbp:1.5.1' // Check for the latest version
 
 
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
 }
 
 tasks.named('test') {

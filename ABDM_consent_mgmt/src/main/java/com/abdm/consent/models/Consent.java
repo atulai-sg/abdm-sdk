@@ -1,9 +1,12 @@
 package com.abdm.consent.models;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.OffsetDateTime;
+//import java.time.OffsetDateTime;
+//import org.threeten.bp.OffsetDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -13,10 +16,17 @@ public class Consent {
 
 
     private UUID requestId;
-    private OffsetDateTime timestamp;
-    private ConsentRequestConsent consent;
 
-    public Consent(UUID requestId, OffsetDateTime timestamp, ConsentRequestConsent consent) {
+
+//    @JsonProperty("timestamp")
+    private String  timestamp;
+
+    private ConsentRequestConsent consent;
+    public  Consent(){
+
+    }
+
+    public Consent(UUID requestId, String timestamp, ConsentRequestConsent consent) {
         this.requestId = requestId;
         this.timestamp = timestamp;
         this.consent = consent;
@@ -30,11 +40,11 @@ public class Consent {
         this.requestId = requestId;
     }
 
-    public OffsetDateTime getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(OffsetDateTime timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 
