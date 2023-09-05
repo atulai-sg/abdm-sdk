@@ -6,12 +6,12 @@ import java.util.Objects;
 
 public class PermissionDateRange {
 //    @SerializedName("from")
-    private OffsetDateTime from = null;
+    private String from = null;
 
 //    @SerializedName("to")
-    private OffsetDateTime to = null;
+    private String to = null;
 
-    public PermissionDateRange from(OffsetDateTime from) {
+    public PermissionDateRange from(String from) {
         this.from = from;
         return this;
     }
@@ -21,15 +21,15 @@ public class PermissionDateRange {
      * @return from
      **/
 //    @Schema(required = true, description = "")
-    public OffsetDateTime getFrom() {
+    public String getFrom() {
         return from;
     }
 
-    public void setFrom(OffsetDateTime from) {
+    public void setFrom(String from) {
         this.from = from;
     }
 
-    public PermissionDateRange to(OffsetDateTime to) {
+    public PermissionDateRange to(String to) {
         this.to = to;
         return this;
     }
@@ -39,11 +39,11 @@ public class PermissionDateRange {
      * @return to
      **/
 //    @Schema(required = true, description = "")
-    public OffsetDateTime getTo() {
+    public String getTo() {
         return to;
     }
 
-    public void setTo(OffsetDateTime to) {
+    public void setTo(String to) {
         this.to = to;
     }
 

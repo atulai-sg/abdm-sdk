@@ -60,7 +60,7 @@ public class Permission {
     private PermissionDateRange dateRange = null;
 
 //    @SerializedName("dataEraseAt")
-    private OffsetDateTime dataEraseAt = null;
+    private String dataEraseAt = null;
 
 //    @SerializedName("frequency")
     private PermissionFrequency frequency = null;
@@ -101,7 +101,7 @@ public class Permission {
         this.dateRange = dateRange;
     }
 
-    public Permission dataEraseAt(OffsetDateTime dataEraseAt) {
+    public Permission dataEraseAt(String dataEraseAt) {
         this.dataEraseAt = dataEraseAt;
         return this;
     }
@@ -111,11 +111,11 @@ public class Permission {
      * @return dataEraseAt
      **/
 //    @Schema(required = true, description = "")
-    public OffsetDateTime getDataEraseAt() {
+    public String getDataEraseAt() {
         return dataEraseAt;
     }
 
-    public void setDataEraseAt(OffsetDateTime dataEraseAt) {
+    public void setDataEraseAt(String dataEraseAt) {
         this.dataEraseAt = dataEraseAt;
     }
 
