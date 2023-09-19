@@ -1,10 +1,12 @@
 package swagger.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
 public class ConsentManagerPatientID {
 
-    //    @SerializedName("id")
+    @JsonProperty("id")
     private String id = null;
 
     public ConsentManagerPatientID id(String id) {

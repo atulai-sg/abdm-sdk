@@ -1,14 +1,16 @@
 package swagger.model;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
-
-public class OrganizationRepresentation {
-    //    @SerializedName("id")
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import java.util.UUID;
+import org.springframework.validation.annotation.Validated;
+import java.time.OffsetDateTime;
+public class Consent {
     @JsonProperty("id")
     private String id = null;
 
-    public OrganizationRepresentation id(String id) {
+    public Consent id(String id) {
         this.id = id;
         return this;
     }
@@ -17,7 +19,7 @@ public class OrganizationRepresentation {
      * Get id
      * @return id
      **/
-//    @Schema(required = true, description = "")
+
     public String getId() {
         return id;
     }
@@ -35,8 +37,8 @@ public class OrganizationRepresentation {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        OrganizationRepresentation organizationRepresentation = (OrganizationRepresentation) o;
-        return Objects.equals(this.id, organizationRepresentation.id);
+        Consent consent = (Consent) o;
+        return Objects.equals(this.id, consent.id);
     }
 
     @Override
@@ -44,11 +46,10 @@ public class OrganizationRepresentation {
         return Objects.hash(id);
     }
 
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("class OrganizationRepresentation {\n");
+        sb.append("class Consent {\n");
 
         sb.append("    id: ").append(toIndentedString(id)).append("\n");
         sb.append("}");
@@ -65,7 +66,4 @@ public class OrganizationRepresentation {
         }
         return o.toString().replace("\n", "\n    ");
     }
-
-
-
 }

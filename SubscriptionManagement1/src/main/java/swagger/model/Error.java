@@ -4,16 +4,13 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
 
 /**
  * Error
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@Validated
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class Error   {
@@ -62,8 +59,8 @@ public class Error   {
    * Get code
    * @return code
    **/
-  @Schema(required = true, description = "")
-      @NotNull
+//  @Schema(required = true, description = "")
+//      @NotNull
 
     public CodeEnum getCode() {
     return code;
@@ -82,8 +79,8 @@ public class Error   {
    * Get message
    * @return message
    **/
-  @Schema(required = true, description = "")
-      @NotNull
+//  @Schema(required = true, description = "")
+//      @NotNull
 
     public String getMessage() {
     return message;

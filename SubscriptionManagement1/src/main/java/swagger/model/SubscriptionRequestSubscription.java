@@ -3,18 +3,17 @@ package swagger.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.v3.oas.annotations.media.Schema;
+
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+
 
 /**
  * SubscriptionRequestSubscription
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@Validated
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class SubscriptionRequestSubscription   {
@@ -28,11 +27,11 @@ public class SubscriptionRequestSubscription   {
   private OrganizationRepresentation hiu = null;
 
   @JsonProperty("hips")
-  @Valid
+
   private List<OrganizationRepresentation> hips = null;
 
   @JsonProperty("categories")
-  @Valid
+
   private List<SubscriptionCategory> categories = new ArrayList<SubscriptionCategory>();
 
   @JsonProperty("period")
@@ -47,10 +46,10 @@ public class SubscriptionRequestSubscription   {
    * Get purpose
    * @return purpose
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public UsePurpose getPurpose() {
     return purpose;
   }
@@ -68,10 +67,10 @@ public class SubscriptionRequestSubscription   {
    * Get patient
    * @return patient
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public ConsentManagerPatientID getPatient() {
     return patient;
   }
@@ -89,10 +88,10 @@ public class SubscriptionRequestSubscription   {
    * Get hiu
    * @return hiu
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public OrganizationRepresentation getHiu() {
     return hiu;
   }
@@ -118,8 +117,8 @@ public class SubscriptionRequestSubscription   {
    * Get hips
    * @return hips
    **/
-  @Schema(description = "")
-      @Valid
+//  @Schema(description = "")
+//      @Valid
     public List<OrganizationRepresentation> getHips() {
     return hips;
   }
@@ -142,9 +141,9 @@ public class SubscriptionRequestSubscription   {
    * Get categories
    * @return categories
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//    @Valid
     public List<SubscriptionCategory> getCategories() {
     return categories;
   }
@@ -162,10 +161,10 @@ public class SubscriptionRequestSubscription   {
    * Get period
    * @return period
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public SubscriptionPeriod getPeriod() {
     return period;
   }

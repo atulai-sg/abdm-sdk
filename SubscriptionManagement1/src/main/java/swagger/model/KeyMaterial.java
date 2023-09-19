@@ -3,17 +3,13 @@ package swagger.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.model.KeyObject;
-import io.swagger.v3.oas.annotations.media.Schema;
-import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+
 
 /**
  * KeyMaterial
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@Validated
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class KeyMaterial   {
@@ -38,8 +34,8 @@ public class KeyMaterial   {
    * Get cryptoAlg
    * @return cryptoAlg
    **/
-  @Schema(example = "ECDH", required = true, description = "")
-      @NotNull
+//  @Schema(example = "ECDH", required = true, description = "")
+//      @NotNull
 
     public String getCryptoAlg() {
     return cryptoAlg;
@@ -58,8 +54,8 @@ public class KeyMaterial   {
    * Get curve
    * @return curve
    **/
-  @Schema(example = "Curve25519", required = true, description = "")
-      @NotNull
+//  @Schema(example = "Curve25519", required = true, description = "")
+//      @NotNull
 
     public String getCurve() {
     return curve;
@@ -78,10 +74,10 @@ public class KeyMaterial   {
    * Get dhPublicKey
    * @return dhPublicKey
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public KeyObject getDhPublicKey() {
     return dhPublicKey;
   }
@@ -99,8 +95,8 @@ public class KeyMaterial   {
    * Get nonce
    * @return nonce
    **/
-  @Schema(example = "3fa85f64-5717-4562-b3fc-2c963f66afa6", required = true, description = "")
-      @NotNull
+//  @Schema(example = "3fa85f64-5717-4562-b3fc-2c963f66afa6", required = true, description = "")
+//      @NotNull
 
     public String getNonce() {
     return nonce;

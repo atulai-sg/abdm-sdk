@@ -4,16 +4,15 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+
 
 /**
  * Meta
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@Validated
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class Meta   {
@@ -65,8 +64,8 @@ public class Meta   {
    * Get communicationMedium
    * @return communicationMedium
    **/
-  @Schema(required = true, description = "")
-      @NotNull
+//  @Schema(required = true, description = "")
+//      @NotNull
 
     public CommunicationMediumEnum getCommunicationMedium() {
     return communicationMedium;
@@ -85,7 +84,7 @@ public class Meta   {
    * Get communicationHint
    * @return communicationHint
    **/
-  @Schema(description = "")
+  //@Schema(description = "")
   
     public String getCommunicationHint() {
     return communicationHint;
@@ -104,7 +103,7 @@ public class Meta   {
    * Get communicationExpiry
    * @return communicationExpiry
    **/
-  @Schema(example = "2019-12-30T12:01:55Z", description = "")
+  //@Schema(example = "2019-12-30T12:01:55Z", description = "")
   
     public String getCommunicationExpiry() {
     return communicationExpiry;

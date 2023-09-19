@@ -4,16 +4,15 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import swagger.model.IdentifierType;
-import io.swagger.v3.oas.annotations.media.Schema;
+
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+
 
 /**
  * Identifier
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@Validated
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class Identifier   {
@@ -32,10 +31,10 @@ public class Identifier   {
    * Get type
    * @return type
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public IdentifierType getType() {
     return type;
   }
@@ -53,8 +52,8 @@ public class Identifier   {
    * Get value
    * @return value
    **/
-  @Schema(example = "+919800083232", required = true, description = "")
-      @NotNull
+//  @Schema(example = "+919800083232", required = true, description = "")
+//      @NotNull
 
     public String getValue() {
     return value;

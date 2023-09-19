@@ -3,18 +3,16 @@ package swagger.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.UUID;
-import org.threeten.bp.OffsetDateTime;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+import java.time.OffsetDateTime;
+
 
 /**
  * HIUSubscriptionNotificationAcknowledgment
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@Validated
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class HIUSubscriptionNotificationAcknowledgment   {
@@ -42,10 +40,10 @@ public class HIUSubscriptionNotificationAcknowledgment   {
    * a nonce, unique for each HTTP request
    * @return requestId
    **/
-  @Schema(example = "5f7a535d-a3fd-416b-b069-c97d021fbacd", required = true, description = "a nonce, unique for each HTTP request")
-      @NotNull
-
-    @Valid
+//  @Schema(example = "5f7a535d-a3fd-416b-b069-c97d021fbacd", required = true, description = "a nonce, unique for each HTTP request")
+//      @NotNull
+//
+//    @Valid
     public UUID getRequestId() {
     return requestId;
   }
@@ -63,10 +61,10 @@ public class HIUSubscriptionNotificationAcknowledgment   {
    * Date time format in UTC, includes miliseconds YYYY-MM-DDThh:mm:ss.vZ
    * @return timestamp
    **/
-  @Schema(required = true, description = "Date time format in UTC, includes miliseconds YYYY-MM-DDThh:mm:ss.vZ")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "Date time format in UTC, includes miliseconds YYYY-MM-DDThh:mm:ss.vZ")
+//      @NotNull
+//
+//    @Valid
     public OffsetDateTime getTimestamp() {
     return timestamp;
   }
@@ -84,9 +82,9 @@ public class HIUSubscriptionNotificationAcknowledgment   {
    * Get acknowledgement
    * @return acknowledgement
    **/
-  @Schema(description = "")
-  
-    @Valid
+//  @Schema(description = "")
+//
+//    @Valid
     public HIUSubscriptionNotificationAcknowledgmentAcknowledgement getAcknowledgement() {
     return acknowledgement;
   }
@@ -104,9 +102,9 @@ public class HIUSubscriptionNotificationAcknowledgment   {
    * Get error
    * @return error
    **/
-  @Schema(description = "")
-  
-    @Valid
+//  @Schema(description = "")
+//
+//    @Valid
     public java.lang.Error getError() {
     return error;
   }
@@ -124,10 +122,10 @@ public class HIUSubscriptionNotificationAcknowledgment   {
    * Get resp
    * @return resp
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public RequestReference getResp() {
     return resp;
   }

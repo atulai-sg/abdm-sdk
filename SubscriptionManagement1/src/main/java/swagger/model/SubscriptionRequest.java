@@ -4,18 +4,12 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import swagger.model.SubscriptionRequestSubscription;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.UUID;
-import org.threeten.bp.OffsetDateTime;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
 
 /**
  * SubscriptionRequest
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class SubscriptionRequest   {
@@ -23,7 +17,7 @@ public class SubscriptionRequest   {
   private UUID requestId = null;
 
   @JsonProperty("timestamp")
-  private OffsetDateTime timestamp = null;
+  private String timestamp = null;
 
   @JsonProperty("subscription")
   private SubscriptionRequestSubscription subscription = null;
@@ -37,10 +31,10 @@ public class SubscriptionRequest   {
    * a nonce, unique for each HTTP request.
    * @return requestId
    **/
-  @Schema(example = "499a5a4a-7dda-4f20-9b67-e24589627061", required = true, description = "a nonce, unique for each HTTP request.")
-      @NotNull
-
-    @Valid
+//  @Schema(example = "499a5a4a-7dda-4f20-9b67-e24589627061", required = true, description = "a nonce, unique for each HTTP request.")
+//      @NotNull
+//
+//    @Valid
     public UUID getRequestId() {
     return requestId;
   }
@@ -49,7 +43,7 @@ public class SubscriptionRequest   {
     this.requestId = requestId;
   }
 
-  public SubscriptionRequest timestamp(OffsetDateTime timestamp) {
+  public SubscriptionRequest timestamp(String timestamp) {
     this.timestamp = timestamp;
     return this;
   }
@@ -58,15 +52,15 @@ public class SubscriptionRequest   {
    * Date time format in UTC, includes miliseconds YYYY-MM-DDThh:mm:ss.vZ
    * @return timestamp
    **/
-  @Schema(required = true, description = "Date time format in UTC, includes miliseconds YYYY-MM-DDThh:mm:ss.vZ")
-      @NotNull
-
-    @Valid
-    public OffsetDateTime getTimestamp() {
+//  @Schema(required = true, description = "Date time format in UTC, includes miliseconds YYYY-MM-DDThh:mm:ss.vZ")
+//      @NotNull
+//
+//    @Valid
+    public String getTimestamp() {
     return timestamp;
   }
 
-  public void setTimestamp(OffsetDateTime timestamp) {
+  public void setTimestamp(String timestamp) {
     this.timestamp = timestamp;
   }
 
@@ -79,10 +73,10 @@ public class SubscriptionRequest   {
    * Get subscription
    * @return subscription
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public SubscriptionRequestSubscription getSubscription() {
     return subscription;
   }

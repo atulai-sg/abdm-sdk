@@ -3,17 +3,15 @@ package swagger.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.v3.oas.annotations.media.Schema;
-import org.threeten.bp.OffsetDateTime;
+import java.time.OffsetDateTime;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+
 
 /**
  * SubscriptionPeriod
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@Validated
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class SubscriptionPeriod   {
@@ -32,10 +30,10 @@ public class SubscriptionPeriod   {
    * Get from
    * @return from
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public OffsetDateTime getFrom() {
     return from;
   }
@@ -53,10 +51,10 @@ public class SubscriptionPeriod   {
    * Get to
    * @return to
    **/
-  @Schema(required = true, description = "")
-      @NotNull
-
-    @Valid
+//  @Schema(required = true, description = "")
+//      @NotNull
+//
+//    @Valid
     public OffsetDateTime getTo() {
     return to;
   }

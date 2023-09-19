@@ -3,16 +3,13 @@ package swagger.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.v3.oas.annotations.media.Schema;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
 
 /**
  * UsePurpose
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@Validated
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class UsePurpose   {
@@ -34,8 +31,8 @@ public class UsePurpose   {
    * Get text
    * @return text
    **/
-  @Schema(required = true, description = "")
-      @NotNull
+//  @Schema(required = true, description = "")
+//      @NotNull
 
     public String getText() {
     return text;
@@ -54,8 +51,8 @@ public class UsePurpose   {
    * From the fixed set, documented at refUri
    * @return code
    **/
-  @Schema(required = true, description = "From the fixed set, documented at refUri")
-      @NotNull
+//  @Schema(required = true, description = "From the fixed set, documented at refUri")
+//      @NotNull
 
     public String getCode() {
     return code;
@@ -74,7 +71,7 @@ public class UsePurpose   {
    * Get refUri
    * @return refUri
    **/
-  @Schema(description = "")
+  //@Schema(description = "")
   
     public String getRefUri() {
     return refUri;

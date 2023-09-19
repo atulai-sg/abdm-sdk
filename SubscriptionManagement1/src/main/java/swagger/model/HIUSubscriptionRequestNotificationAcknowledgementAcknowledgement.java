@@ -4,16 +4,14 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+
 
 /**
  * HIUSubscriptionRequestNotificationAcknowledgementAcknowledgement
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class HIUSubscriptionRequestNotificationAcknowledgementAcknowledgement   {
@@ -60,8 +58,8 @@ public class HIUSubscriptionRequestNotificationAcknowledgementAcknowledgement   
    * Get status
    * @return status
    **/
-  @Schema(required = true, description = "")
-      @NotNull
+//  @Schema(required = true, description = "")
+//      @NotNull
 
     public StatusEnum getStatus() {
     return status;
@@ -80,8 +78,8 @@ public class HIUSubscriptionRequestNotificationAcknowledgementAcknowledgement   
    * Get subscriptionRequestId
    * @return subscriptionRequestId
    **/
-  @Schema(example = "subscription Id", required = true, description = "")
-      @NotNull
+//  @Schema(example = "subscription Id", required = true, description = "")
+//      @NotNull
 
     public String getSubscriptionRequestId() {
     return subscriptionRequestId;

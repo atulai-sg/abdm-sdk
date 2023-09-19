@@ -5,17 +5,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import io.swagger.v3.oas.annotations.media.Schema;
-import org.threeten.bp.OffsetDateTime;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+import java.time.OffsetDateTime;
 
 /**
  * HeartbeatResponse
  */
-@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
+//@Validated
+//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2023-08-22T15:53:53.899420813Z[GMT]")
 
 
 public class HeartbeatResponse   {
@@ -67,9 +64,9 @@ public class HeartbeatResponse   {
    * Date time format in UTC, includes miliseconds YYYY-MM-DDThh:mm:ss.vZ
    * @return timestamp
    **/
-  @Schema(description = "Date time format in UTC, includes miliseconds YYYY-MM-DDThh:mm:ss.vZ")
-  
-    @Valid
+//  @Schema(description = "Date time format in UTC, includes miliseconds YYYY-MM-DDThh:mm:ss.vZ")
+//
+//    @Valid
     public OffsetDateTime getTimestamp() {
     return timestamp;
   }
@@ -87,7 +84,7 @@ public class HeartbeatResponse   {
    * Get status
    * @return status
    **/
-  @Schema(description = "")
+  //@Schema(description = "")
   
     public StatusEnum getStatus() {
     return status;
@@ -106,9 +103,9 @@ public class HeartbeatResponse   {
    * Get error
    * @return error
    **/
-  @Schema(description = "")
-  
-    @Valid
+//  @Schema(description = "")
+//
+//    @Valid
     public java.lang.Error getError() {
     return error;
   }
